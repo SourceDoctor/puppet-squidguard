@@ -12,6 +12,11 @@ Puppet module for configuring squidGuard URL Rewrite.
  - Debian (Jessie and later)
  - Ubuntu (Trusty and later)
 
+Dependencies
+============
+
+ - Squid Proxy Cache
+
 
 To get all Features and rules check SquidGuard Homepage
 
