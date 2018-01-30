@@ -1,0 +1,13 @@
+
+time <%= @timename %> {
+<% if @weekly and @weekly.is_a? Array -%>
+<% @weekly.each do |r| -%>
+    weekly <%= r %>
+<% end -%>
+<% end -%>
+<% if @date and @date.is_a? Array -%>
+<% @date.each do |r| -%>
+    date <%= r %>
+<% end -%>
+<% end -%>
+}

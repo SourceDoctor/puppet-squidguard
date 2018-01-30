@@ -1,0 +1,47 @@
+{
+  "name": "puppet-squidguard",
+  "version": "0.1.0",
+  "author": "SourceDoctor",
+  "summary": "configure SquidGuard URL redirector",
+  "license": "MIT",
+  "source": "https://github.com/SourceDoctor/puppet-squidguard",
+  "project_page": "https://github.com/SourceDoctor/puppet-squidguard",
+  "issues_url": "https://github.com/SourceDoctor/puppet-squidguard/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-concat",
+      "version_requirement": ">= 1.2.5 < 3.0.0"
+    }
+  ],
+  "data_provider": null,
+  "tags": [
+    "squidguard",
+    "squid",
+    "cache",
+    "http",
+    "web"
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.6.1 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04",
+        "16.04",
+        "17.04"
+      ]
+    }
+  ]
+}

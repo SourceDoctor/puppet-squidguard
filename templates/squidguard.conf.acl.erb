@@ -1,0 +1,7 @@
+    <%= @aclname %> {
+<% if @ruleset and @ruleset.is_a? Array -%>
+<% @ruleset.each do |r| -%>
+        <%= r %>
+<% end -%>
+<% end -%>
+    }

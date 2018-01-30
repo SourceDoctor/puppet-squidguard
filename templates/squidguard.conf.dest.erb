@@ -1,0 +1,21 @@
+
+dest <%= @destname %> {
+<% if @domainlist and @domainlist.is_a? Array -%>
+<% @domainlist.each do |r| -%>
+    domainlist <%= r %>
+<% end -%>
+<% end -%>
+<% if @urllist and @urllist.is_a? Array -%>
+<% @urllist.each do |r| -%>
+    urllist <%= r %>
+<% end -%>
+<% end -%>
+<% if @expressionlist and @expressionlist.is_a? Array -%>
+<% @expressionlist.each do |r| -%>
+    expressionlist <%= r %>
+<% end -%>
+<% end -%>
+<% if @log -%>
+    log <%= @log %>
+<% end -%>
+}

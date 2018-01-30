@@ -1,0 +1,16 @@
+
+src <%= @srcname %> {
+<% if @ip and @ip.is_a? Array -%>
+<% @ip.each do |r| -%>
+    ip <%= r %>
+<% end -%>
+<% end -%>
+<% if @domain and @domain.is_a? Array -%>
+<% @domain.each do |r| -%>
+    domain <%= r %>
+<% end -%>
+<% end -%>
+<% if !@user.empty? and @user.is_a? Array -%>
+    user <%= @user.join(' ') %>
+<% end -%>
+}
