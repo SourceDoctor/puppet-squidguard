@@ -50,7 +50,7 @@ acl {
 ### Define a Source Rule squidguard::src
 
 ```puppet
-squidguard::src { 'unwanted':
+squidguard::src { 'grownups':
    ip     => ['1.2.3.4/24',
               '2.3.4.10-2.3.4.100'],
    domain => ['example.org',
