@@ -55,10 +55,10 @@ class squidguard::config (
   }
 
   if $acl {
-    concat::fragment{"squidguard_acl_head":
+    concat::fragment{'squidguard_acl_head':
       target  => $configfile,
       content => template('squidguard/squidguard.conf.acl_head.erb'),
-      order   => "50-acl_head",
+      order   => '50-acl_head',
     }
 
     create_resources('squidguard::acl', $acl);
@@ -66,7 +66,7 @@ class squidguard::config (
     concat::fragment{'squidguard_acl_foot':
       target  => $configfile,
       content => template('squidguard/squidguard.conf.acl_foot.erb'),
-      order   => "70-acl_foot",
+      order   => '70-acl_foot',
     }
   }
 
