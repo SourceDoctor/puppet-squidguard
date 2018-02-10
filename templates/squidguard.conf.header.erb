@@ -8,3 +8,9 @@ logdir <%= @logdir %>
 <% if @dbhome -%>
 dbhome <%= @dbhome %>
 <% end -%>
+<% if @mysqlusername && @mysqlpassword && @mysqldb -%>
+
+mysqlusername <%= @mysqlusername %>
+mysqlpassword <%= @mysqlpassword %>
+mysqldb <%= @mysqldb %>
+<% end -%>

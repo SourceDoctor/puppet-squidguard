@@ -33,6 +33,9 @@ src <%= @srcname %> {
 <% else -%>
     execuserlist <%= @execuserlist %>
 <% end -%>
+<% if @userquery -%>
+    userquery <%= @userquery %>
+<% end -%>
 <% if @domain and @domain.is_a? Array -%>
 <% @domain.each do |r| -%>
     domain <%= r %>

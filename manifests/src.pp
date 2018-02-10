@@ -4,8 +4,9 @@ define squidguard::src (
   $iplist         = [],
   $user           = [],
   $userlist       = [],
-  $domain         = [],
   $execuserlist   = [],
+  $userquery      = '',
+  $domain         = [],
   String $order   = '02',
 ) {
 
