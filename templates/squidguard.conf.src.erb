@@ -16,7 +16,7 @@ src <%= @srcname %> {
 <% end -%>
 <% if !@user.empty? and @user.is_a? Array -%>
     user <%= @user.join(' ') %>
-<% else -%>
+<% elsif !@user.empty? -%>
     user <%= @user %>
 <% end -%>
 <% if @userlist and @userlist.is_a? Array -%>
@@ -33,7 +33,7 @@ src <%= @srcname %> {
 <% else -%>
     execuserlist <%= @execuserlist %>
 <% end -%>
-<% if @userquery -%>
+<% if !@userquery.empty? -%>
     userquery <%= @userquery %>
 <% end -%>
 <% if @domain and @domain.is_a? Array -%>
