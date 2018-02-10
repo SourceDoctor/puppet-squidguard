@@ -4,13 +4,40 @@ src <%= @srcname %> {
 <% @ip.each do |r| -%>
     ip <%= r %>
 <% end -%>
+<% else -%>
+    ip <%= @ip %>
+<% end -%>
+<% if @iplist and @iplist.is_a? Array -%>
+<% @iplist.each do |rlist| -%>
+    iplist <%= rlist %>
+<% end -%>
+<% else -%>
+    iplist <%= @iplist %>
+<% end -%>
+<% if !@user.empty? and @user.is_a? Array -%>
+    user <%= @user.join(' ') %>
+<% else -%>
+    user <%= @user %>
+<% end -%>
+<% if @userlist and @userlist.is_a? Array -%>
+<% @userlist.each do |ulist| -%>
+    userlist <%= ulist %>
+<% end -%>
+<% else -%>
+    userlist <%= @userlist %>
+<% end -%>
+<% if @execuserlist and @execuserlist.is_a? Array -%>
+<% @execuserlist.each do |eulist| -%>
+    execuserlist <%= eulist %>
+<% end -%>
+<% else -%>
+    execuserlist <%= @execuserlist %>
 <% end -%>
 <% if @domain and @domain.is_a? Array -%>
 <% @domain.each do |r| -%>
     domain <%= r %>
 <% end -%>
-<% end -%>
-<% if !@user.empty? and @user.is_a? Array -%>
-    user <%= @user.join(' ') %>
+<% else -%>
+    domain <%= @domain %>
 <% end -%>
 }

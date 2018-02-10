@@ -1,8 +1,11 @@
 define squidguard::src (
   String $srcname = $title,
   $ip             = [],
-  $domain         = [],
+  $iplist         = [],
   $user           = [],
+  $userlist       = [],
+  $domain         = [],
+  $execuserlist   = [],
   String $order   = '02',
 ) {
 
