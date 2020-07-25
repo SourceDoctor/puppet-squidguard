@@ -9,8 +9,8 @@ Description
 Puppet module for configuring squidGuard URL Rewrite.
 
 ## Supported distributions
- - Debian (Jessie and later)
- - Ubuntu (Trusty and later)
+ - Debian
+ - Ubuntu
 
 Dependencies
 ------------
