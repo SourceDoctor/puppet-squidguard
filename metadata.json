@@ -1,6 +1,6 @@
 {
   "name": "sourcedoctor-squidguard",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "SourceDoctor",
   "summary": "configure SquidGuard URL redirector",
   "license": "MIT",
@@ -24,7 +24,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.6.1 < 6.0.0"
+      "version_requirement": ">= 4.6.1 < 8.0.0"
     }
   ],
   "tags": [
